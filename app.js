@@ -187,9 +187,3 @@ liMa.render();
 //     activities: function(){
 //       console.log(    'social and fun')
 //     }
-//   }
-//   person.activities();
-//   person1.activities();
-// var child= document.getElementById('child');
-// var child1 = document.createElement('li');
-// child.appendChild(child1);
