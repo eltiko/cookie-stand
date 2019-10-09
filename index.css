@@ -13,7 +13,7 @@ body{
     margin-top: 2cm;
     margin-left: 2cm;
     margin-right: 2cm;
-    background-image: url('https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png');
+    /* background-image: url('https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png'); */
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@ h1{
 }
 .home{
 
-    background-image: url('https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png');
+    /* background-image: url('https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,4 +38,16 @@ a{
     font-size: 30px;
     border: 3px solid white;
     background: black;
+}
+
+   #parent { 
+       margin-left: 2cm;
+       margin-right: 2cm;
+       margin-bottom: 2cm;
+       margin-top: 2cm;
+       border : 2px, solid, black; 
+}
+table{
+   border: 2px, solid, black;
+    border-collapse: collapse;
 }
