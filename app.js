@@ -191,6 +191,9 @@ lima.saleAverage();
 lima.limaSum();
 
 
+
+
+
 // render: function(){
             // liElement.textContent = 'hours ' + this.shopHours[i] + ' cookies ' + this.averageCookiesPerHour[i];
             // tableHead.appendChild(trEl);
