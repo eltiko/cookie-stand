@@ -105,19 +105,19 @@ var totalRow = function () {
   
   totalRow();
 
-  // var formKookie = document.getElementById('salmonCookie');
-  // formKookie.addEventListener('submit', handleSubmit);
-  // function handleSubmit(event){
-  //   event.preventDefault();
-  //   // console.log('event.target.inputElNewLoc.value:', event.target.inputElNewLoc.value);
-  //   this.location = event.target.inputLocaton.value;
-  //   this.minCust = event.target.inputMinCust.value;
-  //   this.maxCust = event.target.inputMaxCust.value;
-  //   this.avgCookies = event.target.inputAveCookie.value;
-  //   var newLoc = new Stores(this.location, this.minCust, this.maxCust, this.avgCookies);
-  //   allStores.push(newLoc);
-  //   // CookieTable.removeChild(CookieTable.lastChild);
-  //   newLoc.render();
+  var formKookie = document.getElementById('salmonCookie');
+  formKookie.addEventListener('submit', handleSubmit);
+  function handleSubmit(event){
+    event.preventDefault();
+    // console.log('event.target.inputElNewLoc.value:', event.target.inputElNewLoc.value);
+    this.location = event.target.inputLocaton.value;
+    this.minCust = event.target.inputMinCust.value;
+    this.maxCust = event.target.inputMaxCust.value;
+    this.avgCookies = event.target.inputAveCookie.value;
+    var newLoc = new Stores(this.location, this.minCust, this.maxCust, this.avgCookies);
+    allStores.push(newLoc);
+    // CookieTable.removeChild(CookieTable.lastChild);
+    newLoc.render();
     
-  //   totalRow(); 
-  // };
+    totalRow(); 
+  };
