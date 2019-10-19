@@ -1,9 +1,17 @@
-h1{
+#welcome{
     text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
   color: orange;
-  font-size: 330em;
-  margin-top: 50px;
+  font-size: 40px;
+  padding-top: 20px;
+  background: black;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  right: 40%;
+  top: 40%;
+  vertical-align:bottom ;
 }
 ul{
     /* position: absolute; */
@@ -21,4 +29,34 @@ header{
 tr{
     text-align: center;
     text-indent: 3px;
+    
+}
+.home{
+    background-image: url("https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png");
+}
+.sale{
+    background: rgb(228, 167, 144);
+    padding: 60%x;
+    block-size: 100%;
+}
+#table{
+    text-align: center;
+    /* border: 2px solid black; */
+    margin-left: 30%;
+}
+#table{
+    border: 2px  solid black;
+    block-size: 100%;
+}
+
+td{
+    border: 2px solid black;
+    background: rgb(249, 255, 199);
+}
+footer{
+    background-image: url("https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png");
+    height: 250px;
+    margin: 30px;
+    background-repeat: no-repeat;
+    margin-left: 20%;
 }

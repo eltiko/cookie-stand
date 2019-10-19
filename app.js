@@ -47,21 +47,22 @@ function Stores(location, minCust, maxCust, avgCookies){
 }
 //get the render
 Stores.prototype.render = function(){
-//creat a table row for data to store in
-var trEl = document.createElement('tr');
-var thEl = document.createElement('th');
-this.textContent = this.location;
-trEl.appendChild(thEl);
+  //creat a table row for data to store in
+  var trEl = document.createElement('tr');
+  var thEl = document.createElement('th');
+  var nameEl = document.createElement('td')
+  nameEl.textContent = this.location;
+  trEl.appendChild(nameEl);
 
-for( var i = 0; i < cookieShopHours.length; i++){
-    var tdElement = document.createElement('td');
-    tdElement.textContent = this.cookiesHours[i];
-    trEl.appendChild(tdElement);
-}
-var sumElement1 = document.createElement('td');
-    sumElement1.textContent = this.dailySale;
-    trEl.appendChild(sumElement1);
-    CookieTable.appendChild(trEl);
+  for( var i = 0; i < cookieShopHours.length; i++){
+      var tdElement = document.createElement('td');
+      tdElement.textContent = this.cookiesHours[i];
+        trEl.appendChild(tdElement);
+  }
+  var sumElement1 = document.createElement('td');
+      sumElement1.textContent = this.dailySale;
+      trEl.appendChild(sumElement1);
+      CookieTable.appendChild(trEl);
 };
 var Seattle = new Stores('Seattle', 23, 65, 6.3);
 var Tokyo = new Stores('Tokyo', 3, 24, 1.2);
@@ -104,19 +105,19 @@ var totalRow = function () {
   
   totalRow();
 
-  var formKookie = document.getElementById('salmonCookie');
-  formKookie.addEventListener('submit', handleSubmit);
-  function handleSubmit(event){
-    event.preventDefault();
-    // console.log('event.target.inputElNewLoc.value:', event.target.inputElNewLoc.value);
-    this.location = event.target.inputLocaton.value;
-    this.minCust = event.target.inputMinCust.value;
-    this.maxCust = event.target.inputMaxCust.value;
-    this.avgCookies = event.target.inputAveCookie.value;
-    var newLoc = new Stores(this.location, this.minCust, this.maxCust, this.avgCookies);
-    allStores.push(newLoc);
-    // CookieTable.removeChild(CookieTable.lastChild);
-    newLoc.render();
+  // var formKookie = document.getElementById('salmonCookie');
+  // formKookie.addEventListener('submit', handleSubmit);
+  // function handleSubmit(event){
+  //   event.preventDefault();
+  //   // console.log('event.target.inputElNewLoc.value:', event.target.inputElNewLoc.value);
+  //   this.location = event.target.inputLocaton.value;
+  //   this.minCust = event.target.inputMinCust.value;
+  //   this.maxCust = event.target.inputMaxCust.value;
+  //   this.avgCookies = event.target.inputAveCookie.value;
+  //   var newLoc = new Stores(this.location, this.minCust, this.maxCust, this.avgCookies);
+  //   allStores.push(newLoc);
+  //   // CookieTable.removeChild(CookieTable.lastChild);
+  //   newLoc.render();
     
-    totalRow(); 
-  };
+  //   totalRow(); 
+  // };
